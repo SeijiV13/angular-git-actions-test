@@ -7,7 +7,7 @@
     "build": "ng build  --base-href https://seijiv13.github.io/angular-git-actions-test",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href https://seijiv13.github.io/angular-git-actions-test --no-silent"
+    "deploy": "ng deploy --base-href=/angular-git-actions-test --no-silent"
   },
   "private": true,
   "dependencies": {

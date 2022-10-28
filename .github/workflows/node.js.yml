@@ -31,6 +31,7 @@ jobs:
     - run: git config --global user.name "Seiji Villafranca"
     - run: npm ci
     - run: npm run build
+    - run: npm run deploy
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
