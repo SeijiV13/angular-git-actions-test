@@ -30,7 +30,7 @@ jobs:
     - run: git config --global user.email "villafrancasra@gmail.com"
     - run: git config --global user.name "Seiji Villafranca"
     - run: npm ci
-    - run: npm run build --if-present
+    - run: npm run build
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
