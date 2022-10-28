@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build  --base-href https://seijiv13.github.io/angular-git-actions-test",
+    "build": "ng build  --base-href=/angular-git-actions-test",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng deploy --base-href=/angular-git-actions-test --no-silent"
