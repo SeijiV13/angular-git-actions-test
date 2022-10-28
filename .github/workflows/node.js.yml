@@ -31,11 +31,10 @@ jobs:
     - run: git config --global user.name "Seiji Villafranca"
     - run: npm ci
     - run: npm run build
-    - run: npm run deploy
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.TOKEN_GITHUB_ACTION }}
-        publish_dir: dist/angular-github-actions-test
+        publish_dir: dist/angular-git-actions-test
         enable_jekyll: true
