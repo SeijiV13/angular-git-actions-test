@@ -33,7 +33,7 @@ jobs:
     - run: git config --global user.name "Seiji Villafranca"
     - run: npm ci
     - run: npm run build --if-present
--   name: Deploy
+    - name: Deploy
       if: success()
       uses: SeijiV13/angular-github-actions-test
       with:
