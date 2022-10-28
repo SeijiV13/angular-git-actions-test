@@ -23,11 +23,12 @@ jobs:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
-      env:
-        GITHUB_TOKEN: ${{secrets.TOKEN_GITHUB_ACTION}}
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        GITHUB_TOKEN: ${{secrets.TOKEN_GITHUB_ACTION}}
+      env:
+        GITHUB_TOKEN: ${{secrets.TOKEN_GITHUB_ACTION}}
     - run: git config --global user.email "villafrancasra@gmail.com"
     - run: git config --global user.name "Seiji Villafranca"
     - run: npm ci
